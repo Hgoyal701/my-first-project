@@ -1,1 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My First Project — Portfolio</title>
+  <meta name="description" content="A small project, a big beginning — turning curiosity into code, one commit at a time." />
+  <style>
+    :root{--bg:#f7f8fb;--card:#fff;--muted:#6b7280;--accent:#0b5fff}
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.5;background:var(--bg);color:#0f172a;margin:0;padding:24px}
+    .container{max-width:900px;margin:0 auto}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+    .logo{width:72px;height:72px;border-radius:10px;background:linear-gradient(135deg,#0b5fff 0%,#2dd4bf 100%);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(12,17,26,0.06);margin-bottom:16px}
+    .badges img{height:20px;margin-right:6px;vertical-align:middle}
+    h2{margin-top:0}
+    ul {padding-left:1.2rem}
+    pre{background:#0b1220;color:#e6eef8;padding:12px;border-radius:8px;overflow:auto}
+    .flex{display:flex;gap:12px;flex-wrap:wrap}
+    footer{color:var(--muted);font-size:0.9rem;text-align:center;margin-top:28px}
+    .screenshot{width:100%;border-radius:8px;border:1px solid #e6eef8}
+    .meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;color:var(--muted);font-size:0.95rem}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    @media (prefers-color-scheme:dark){
+      :root{--bg:#071124;--card:#071529;--muted:#9aa7bf}
+      body{color:#e6eef8}
+      pre{background:#071529}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">MP</div>
+      <div>
+        <h1>my-first-project</h1>
+        <p class="lead">A small project, a big beginning — turning curiosity into code, one commit at a time.</p>
+        <div class="badges" style="margin-top:8px">
+          <!-- Optional shields: replace with real URLs -->
+          <img src="https://img.shields.io/badge/license-MIT-green?style=flat" alt="license">
+          <img src="https://img.shields.io/badge/ready-for-development-blue?style=flat" alt="status">
+        </div>
+      </div>
+    </header>
 
+    <section class="card" id="overview">
+      <h2>Overview</h2>
+      <p>This repository is a starting point for learning, experimenting, and building small projects. Use this page to track goals, showcase progress, and explain how to run the project locally.</p>
+      <div class="meta">
+        <div><strong>Owner:</strong> <a href="https://github.com/Hgoyal701">Hgoyal701</a></div>
+        <div><strong>Repo:</strong> <a href="https://github.com/Hgoyal701/my-first-project">my-first-project</a></div>
+      </div>
+    </section>
+
+    <section class="card" id="status">
+      <h2>Status & Roadmap</h2>
+      <ul>
+        <li><strong>Current status:</strong> Planning / In progress</li>
+        <li><strong>Next steps:</strong> Add README content, create a demo, add tests, and set up CI.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Short, focused demo project to learn fundamentals</li>
+        <li>Example code and usage instructions</li>
+        <li>Guide for contributors</li>
+      </ul>
+    </section>
+
+    <section class="card" id="tech">
+      <h2>Tech stack</h2>
+      <ul>
+        <li>Language: (replace with your language, e.g. JavaScript, Python)</li>
+        <li>Libraries / Frameworks: list any used</li>
+      </ul>
+    </section>
+
+    <section class="card" id="getting-started">
+      <h2>Getting started</h2>
+      <p>Copy these commands into your terminal to run locally (adjust for your stack):</p>
+      <pre><code># clone the repository
+git clone https://github.com/Hgoyal701/my-first-project.git
+cd my-first-project
+
+# Example for Node.js projects:
+npm install
+npm start
+
+# Example for Python projects:
+# python -m venv .venv
+# .venv/bin/pip install -r requirements.txt
+# python main.py
+</code></pre>
+    </section>
+
+    <section class="card" id="usage">
+      <h2>Usage</h2>
+      <p>Provide a short example showing key commands or code snippets your users will run to see the project in action.</p>
+      <pre><code># Example usage
+npm run demo
+</code></pre>
+    </section>
+
+    <section class="card" id="screenshots">
+      <h2>Screenshots / Demo</h2>
+      <p>Add images, GIFs, or links to a live demo. Replace the placeholder below with real screenshots.</p>
+      <img class="screenshot" src="https://via.placeholder.com/900x360.png?text=Demo+Screenshot+Placeholder" alt="screenshot placeholder">
+    </section>
+
+    <section class="card" id="contributing">
+      <h2>Contributing</h2>
+      <p>Contributions are welcome! Recommended workflow:</p>
+      <ol>
+        <li>Fork the repo</li>
+        <li>Create a branch: <code>git checkout -b feature/my-change</code></li>
+        <li>Commit and push, then open a pull request</li>
+      </ol>
+      <p>If you'd like, add a <code>CONTRIBUTING.md</code> file for contribution guidelines and a PR checklist.</p>
+    </section>
+
+    <section class="card" id="issues">
+      <h2>Issues & Templates</h2>
+      <p>Use repository issues to report bugs or request features. Consider adding issue templates in <code>.github/ISSUE_TEMPLATE/</code> to standardize reports.</p>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Author: <a href="https://github.com/Hgoyal701">Harsh Goyal (Hgoyal701)</a></p>
+    </section>
+
+    <footer>
+      <div class="card" style="padding:12px;text-align:center">
+        <div>License: MIT (or choose another)</div>
+        <div style="margin-top:6px"><a href="https://github.com/Hgoyal701/my-first-project/blob/main/README.md">View README</a> • <a href="https://github.com/Hgoyal701/my-first-project">Repository</a></div>
+      </div>
+      <div style="height:14px"></div>
+    </footer>
+  </div>
+</body>
+</html>
